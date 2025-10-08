@@ -5,8 +5,8 @@
 # Ideia geral:
 #   - Mantemos um vetor 'quadros' com o conteúdo dos 8 quadros de memória.
 #   - Para cada referência de página na sequência:
-#       * Se a página já estiver nos quadros (HIT), atualizamos metadados quando necessário.
-#       * Se não estiver (MISS), inserimos ou substituímos conforme a política.
+#       * Se a página já estiver nos quadros (acerto/HIT), atualizamos metadados quando necessário.
+#       * Se não estiver (falta/MISS), inserimos ou substituímos conforme a política.
 #
 # Políticas:
 #   - FIFO: remove a página que está há mais tempo na memória (a "mais antiga").
