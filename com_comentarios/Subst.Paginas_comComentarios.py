@@ -93,7 +93,7 @@ def simular_lru(sequencia, qtd_quadros):
                 # Memória cheia: escolhe a vítima menos recente
                 indice_vitima = -1
                 pagina_vitima = None
-                menor_tempo = 10**9  # sentinel alto
+                menor_tempo = 10**9  # número grande só para iniciar a busca
 
                 # Percorre os quadros para achar quem tem a menor 'ultima_vez_usada'
                 for i, p in enumerate(quadros):
@@ -141,7 +141,7 @@ def simular_mru(sequencia, qtd_quadros):
                 # Memória cheia: escolhe a vítima mais recente
                 indice_vitima = -1
                 pagina_vitima = None
-                maior_tempo = -1  # sentinel baixo
+                maior_tempo = -1  # começa baixo para achar o maior
 
                 # Percorre os quadros para achar quem tem a maior 'ultima_vez_usada'
                 for i, p in enumerate(quadros):
